@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+    <title>首页</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="logo"></div>
+      <div class="wz"></div>
+      <div class="light" id="light"></div>
+      <a href="javascript:;" class="menu" id="menu"></a>
+      <div class="nav">
+        <a class="nav-item on" href="javascript:void(0)"><i class="ion i-register"></i>峰会注册</a>
+        <a class="nav-item" href="javascript:void(0)"><i class="ion i-date"></i>活动日程</a>
+        <a class="nav-item" href="javascript:void(0)"><i class="ion i-message"></i>会务信息</a>
+        <a class="nav-item" href="javascript:void(0)"><i class="ion i-build"></i>团队建设</a>
+        <a class="nav-item" href="javascript:void(0)"><i class="ion i-interact"></i>晚宴互动</a>
+        <a class="nav-item" href="javascript:void(0)"><i class="ion i-center"></i>个人中心</a>
+      </div>     
+    </div>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+          var oLight = document.getElementById('light');
+          oLight.className += ' run';
+          var oMenu = document.getElementById('menu');
+          oMenu.className += ' toTop';
+        }
+        $(function(){
+          $('.menu').on('click', function(){
+            if($(this).hasClass('menu-top')){
+              $(this).removeClass('menu-top').addClass('toTop');
+              $('.nav').removeClass('nav-top');
+            }else{
+              $(this).addClass('menu-top').removeClass('toTop');
+              $('.nav').addClass('nav-top');
+            }
+          })
+        })
+    </script>
+  </body>
+</html>

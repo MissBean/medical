@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+    <title>注册01</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="wrap pt2">
+      <div class="l-logo"></div>      
+      <div class="reg-list reg-info pb0">
+          <div class="form-reg">
+            <input type="text" class="form-input" placeholder="姓名" />
+          </div>
+          <div class="form-reg">
+            <input type="text" class="form-input" placeholder="性别" />
+          </div>
+          <div class="form-reg">
+            <input type="text" class="form-input" placeholder="身份证" />
+          </div>
+          <div class="form-reg">
+            <input type="text" class="form-input" placeholder="邮箱" />
+          </div>
+          <div class="form-reg form-upload clearfix">
+            <a class="upload-btn fl" href="javascript:;"></a>
+            <span class="upload-tips">请您上传一张可以彰显 您非凡时刻的照片， 需要高清图！</span>
+          </div>
+          <div class="form-reg">
+            <select class="form-input">
+              <option>T恤尺寸</option>
+              <option>T恤尺寸</option>
+              <option>T恤尺寸</option>
+            </select>
+          </div>
+          <div class="form-reg self-define">
+            <input type="text" class="form-input" placeholder="T恤尺寸">
+            <span class="arrow-icon"></span>
+          </div>    
+      </div>
+      <h3>请填写您的行程信息</h3>
+      <div class="reg-list reg-info">
+          <div class="form-reg">
+            <input type="text" class="form-input" placeholder="去程航班号" />
+          </div>
+          <div class="form-reg">
+            <input type="text" class="form-input" placeholder="去程到达时间*" />
+          </div>
+          <div class="form-reg">
+            <input type="date" class="form-input date" placeholder="入住日期" />
+          </div>
+          <div class="form-reg">
+            <input type="date" class="form-input date" placeholder="退房日期" />
+          </div>
+          <div class="reg-tips">7月4日前入住或7月6日延后退房 房费需自付！  </div>
+          <div class="form-reg">
+            <input type="time" class="form-input time" placeholder="离开酒店乘坐班车时间" />
+          </div>
+          <div class="form-reg">
+            <input type="text" class="form-input" placeholder="公司信用卡号*" />
+          </div>
+          <div class="form-reg">
+            <input type="date" class="form-input" placeholder="公司信用卡有效期    月份/年" />
+          </div>
+          <div class="form-reg">
+            <input type="text" class="form-input" placeholder="成本中心" />
+          </div>
+          <div class="form-reg">
+            <textarea class="form-textarea">如需与指定人员SHARE房间 请您在这里注明对方SSO及 姓名，其他特殊需求也请列明
+            </textarea>
+          </div>
+          <a class="btn self-vertify-btn" href="javascript:;">提交峰会报名</a>
+           <div class="dead-line">峰会报名截止日期：6月**日</div>
+        </div>
+        
+      </div>
+    </div>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+      $(".date, .time").on("input",function(){
+         if($(this).val().length>0){
+         $(this).addClass("full");
+      }
+      else{
+        $(this).removeClass("full");
+        }
+       });
+    </script>
+  </body>
+</html>
