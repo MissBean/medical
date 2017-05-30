@@ -168,8 +168,9 @@ a {text-decoration: none;}
 .nav .nav-item .ion.i-build {background-image: url(./images/nav-icon-b.png);background-position: 0 0;}
 .nav .nav-item .ion.i-interact {background-image: url(./images/nav-icon-b.png);background-position: 50% 0;}
 .nav .nav-item .ion.i-center {background-image: url(./images/nav-icon-b.png);background-position: 100% 0;}
-.index-wrap .nav {height:auto;}
-.index-wrap .menu {bottom:3.1rem;animation:none;}
+/* .index-wrap .nav {height:auto;}
+.index-wrap .menu {bottom:3.1rem;animation:none;} */
+.index-wrap.wrap{height:100%;overflow:hidden;}
 @-webkit-keyframes toTop {
   0% {bottom: -.61rem;}
   100% {bottom: 0;}
