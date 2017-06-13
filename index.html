@@ -32,10 +32,10 @@
         $(function(){
           $('.menu').on('click', function(){
             if($(this).hasClass('menu-top')){
-              $(this).removeClass('menu-top').addClass('toTop');
+              $(this).addClass('toTop2').removeClass('menu-top').removeClass('toTop');
               $('.nav').removeClass('nav-top');
             }else{
-              $(this).addClass('menu-top').removeClass('toTop');
+              $(this).addClass('menu-top').removeClass('toTop2');
               $('.nav').addClass('nav-top');
             }
           })
