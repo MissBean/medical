@@ -96,34 +96,49 @@ a {text-decoration: none;}
 }
 .menu.menuabs{bottom: 0;}
 .toTop {
-  -webkit-animation: toTop 2s ease 3s forwards;
-  -moz-animation: toTop 2s ease 3s forwards;
-  -ms-animation: toTop 2s ease 3s forwards;
-  -o-animation: toTop 2s ease 3s forwards;
-  animation: toTop 2s ease 3s forwards;
+  -webkit-animation: toTop .4s ease 3s forwards;
+  -moz-animation: toTop .4s ease 3s forwards;
+  -ms-animation: toTop .4s ease 3s forwards;
+  -o-animation: toTop .4s ease 3s forwards;
+  animation: toTop .4s ease 3s forwards;
+}
+.toTop2 {
+  -webkit-animation: toTop .4s ease .1s forwards;
+  -moz-animation: toTop .4s ease .1s forwards;
+  -ms-animation: toTop .4s ease .1s forwards;
+  -o-animation: toTop .4s ease .1s forwards;
+  animation: toTop .4s ease .1s forwards;
 }
 .menu-top {
-  -webkit-animation: menuTop 2s ease 0s forwards;
-  -moz-animation: menuTop 2s ease 0s forwards;
-  -ms-animation: menuTop 2s ease 0s forwards;
-  -o-animation: menuTop 2s ease 0s forwards;
-  animation: menuTop 2s ease 0s forwards;
+  -webkit-animation: menuTop .4s ease 0s forwards;
+  -moz-animation: menuTop .4s ease 0s forwards;
+  -ms-animation: menuTop .4s ease 0s forwards;
+  -o-animation: menuTop .4s ease 0s forwards;
+  animation: menuTop .4s ease 0s forwards;
 }
 .light {
-  position: absolute;
+  /*position: absolute;
   width:6.4rem;   
-  height:6.4rem; 
-  background-repeat: no-repeat;
-  background-size: cover;
-  top:2rem;
-  background: url(./images/light.png) ;     
+  height:4rem; */
+  /*background-repeat: no-repeat;
+  background-size: auto 3rem;
+  background-position: left center;
+  /*top:3rem;*/
+  /*background-image: url(./images/light-bf.png) ;   */
+
+  position: absolute;
+  width: 6.4rem;
+  height: 4rem;
+  top: 3rem;
+  background: url(./images/light-bf.png) no-repeat left center;
+  background-size: auto 3rem;  
 }
 .run {
-  -webkit-animation:run 2.5s steps(1, start); 
-  -moz-animation:run 2.5s steps(1, start); 
-  -ms-animation:run 2.5s steps(1, start); 
-  -o-animation:run 2.5s steps(1, start); 
-  animation:run 2.5s steps(1, start); 
+  -webkit-animation:run 2.5s steps(1, start) forwards; 
+  -moz-animation:run 2.5s steps(1, start) forwards; 
+  -ms-animation:run 2.5s steps(1, start) forwards; 
+  -o-animation:run 2.5s steps(1, start) forwards; 
+  animation:run 2.5s steps(1, start) forwards; 
 }
 .nav {
   font-size: 0;
@@ -158,16 +173,25 @@ a {text-decoration: none;}
   margin: 15% auto 10%;
   width: .43rem;
   height: .43rem;
+  background-image: url(./images/nav-icon.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 4.75rem 2.04rem;
   font-style: normal;
 }
-.nav .nav-item .ion.i-register {background-image: url(./images/nav-icon-t.png);background-position: 0 0;}
+.nav .nav-item .ion.i-register {background-position: 0 2%;}
+.nav .nav-item .ion.i-date {background-position: 50% 2%;}
+.nav .nav-item .ion.i-message {background-position: 100% 2%;}
+.nav .nav-item .ion.i-build {background-position: 0 100%;}
+.nav .nav-item .ion.i-interact {background-position: 50% 100%;}
+.nav .nav-item .ion.i-center {background-position: 100% 100%;}
+/*.nav .nav-item .ion.i-register {background-image: url(./images/nav-icon-t.png);background-position: 0 0;}
 .nav .nav-item .ion.i-date {background-image: url(./images/nav-icon-t.png);background-position: 50% 0;}
 .nav .nav-item .ion.i-message {background-image: url(./images/nav-icon-t.png);background-position: 100% 0;}
 .nav .nav-item .ion.i-build {background-image: url(./images/nav-icon-b.png);background-position: 0 0;}
 .nav .nav-item .ion.i-interact {background-image: url(./images/nav-icon-b.png);background-position: 50% 0;}
-.nav .nav-item .ion.i-center {background-image: url(./images/nav-icon-b.png);background-position: 100% 0;}
+.nav .nav-item .ion.i-center {background-image: url(./images/nav-icon-b.png);background-position: 100% 0;}*/
+.index-wrap {overflow: hidden;height: 100%;}
+
 @-webkit-keyframes toTop {
   0% {bottom: -.61rem;}
   100% {bottom: 0;}
@@ -220,40 +244,95 @@ a {text-decoration: none;}
   87.5%, 100%{  background-position: -4480px 0 ;  } 
 }   */
 @-webkit-keyframes run{   
-  0%, 6%{  background-position: 0 0;  }   
-  25%, 40%{  background-position: -640px 0;  }   
-  50%, 62%{  background-position: -1280px 0 ;  }   
-  75%, 81%{  background-position: -1920px 0 ;  }   
-  87.5%, 100%{  background-position: -2560px 0 ;  }    
-} 
-@-moz-keyframes run{   
-  0%, 6%{  background-position: 0 0;  }   
-  25%, 40%{  background-position: -640px 0;  }   
-  50%, 62%{  background-position: -1280px 0 ;  }   
-  75%, 81%{  background-position: -1920px 0 ;  }   
-  87.5%, 100%{  background-position: -2560px 0 ;  }    
+    0%{  background-position: 0 bottom;  }   
+    6% {  background-position: -6.4rem bottom;  }   
+    12% {  background-position: -12.8rem bottom;  }   
+    18% {  background-position: -19.2rem bottom;  }   
+    24% {  background-position: -25.6rem bottom;  }   
+    30% {  background-position: -32rem bottom;  }   
+    36% {  background-position: -38.4rem bottom;  }   
+    42% {  background-position: -44.8rem bottom;  }   
+    48% {  background-position: -51.2rem bottom;  }   
+    54% {  background-position: -57.6rem bottom;  }   
+    60% {  background-position: -64rem bottom;  }   
+    66% {  background-position: -70.4rem bottom;  }   
+    72% {  background-position: -76.79rem bottom;  }   
+    78% {  background-position: -83.19rem bottom;  }   
+    84% {  background-position: -89.6rem bottom;  }   
+    100% {  background-position: -89.6rem bottom;  }     
 }
-@-ms-keyframes run{   
-  0%, 6%{  background-position: 0 0;  }   
-  25%, 40%{  background-position: -640px 0;  }   
-  50%, 62%{  background-position: -1280px 0 ;  }  
-  75%, 81%{  background-position: -1920px 0 ;  }  
-  87.5%, 100%{  background-position: -2560px 0 ;  }  
+@-moz-keyframes run{   
+    0%{  background-position: 0 bottom;  }   
+    6% {  background-position: -6.4rem bottom;  }   
+    12% {  background-position: -12.8rem bottom;  }   
+    18% {  background-position: -19.2rem bottom;  }   
+    24% {  background-position: -25.6rem bottom;  }   
+    30% {  background-position: -32rem bottom;  }   
+    36% {  background-position: -38.4rem bottom;  }   
+    42% {  background-position: -44.8rem bottom;  }   
+    48% {  background-position: -51.2rem bottom;  }   
+    54% {  background-position: -57.6rem bottom;  }   
+    60% {  background-position: -64rem bottom;  }   
+    66% {  background-position: -70.4rem bottom;  }   
+    72% {  background-position: -76.79rem bottom;  }   
+    78% {  background-position: -83.19rem bottom;  }   
+    84% {  background-position: -89.6rem bottom;  }   
+    100% {  background-position: -89.6rem bottom;  }    
+}
+@-mo-keyframes run{   
+    0%{  background-position: 0 bottom;  }   
+    6% {  background-position: -6.4rem bottom;  }   
+    12% {  background-position: -12.8rem bottom;  }   
+    18% {  background-position: -19.2rem bottom;  }   
+    24% {  background-position: -25.6rem bottom;  }   
+    30% {  background-position: -32rem bottom;  }   
+    36% {  background-position: -38.4rem bottom;  }   
+    42% {  background-position: -44.8rem bottom;  }   
+    48% {  background-position: -51.2rem bottom;  }   
+    54% {  background-position: -57.6rem bottom;  }   
+    60% {  background-position: -64rem bottom;  }   
+    66% {  background-position: -70.4rem bottom;  }   
+    72% {  background-position: -76.79rem bottom;  }   
+    78% {  background-position: -83.19rem bottom;  }   
+    84% {  background-position: -89.6rem bottom;  }   
+    100% {  background-position: -89.6rem bottom;  }    
 }
 @-o-keyframes run{   
-  0%, 6%{  background-position: 0 0;  }   
-  25%, 40%{  background-position: -640px 0;  }   
-  50%, 62%{  background-position: -1280px 0 ;  }   
-  75%, 81%{  background-position: -1920px 0 ;  }   
-  87.5%, 100%{  background-position: -2560px 0 ;  }    
+    0%{  background-position: 0 bottom;  }   
+    6% {  background-position: -6.4rem bottom;  }   
+    12% {  background-position: -12.8rem bottom;  }   
+    18% {  background-position: -19.2rem bottom;  }   
+    24% {  background-position: -25.6rem bottom;  }   
+    30% {  background-position: -32rem bottom;  }   
+    36% {  background-position: -38.4rem bottom;  }   
+    42% {  background-position: -44.8rem bottom;  }   
+    48% {  background-position: -51.2rem bottom;  }   
+    54% {  background-position: -57.6rem bottom;  }   
+    60% {  background-position: -64rem bottom;  }   
+    66% {  background-position: -70.4rem bottom;  }   
+    72% {  background-position: -76.79rem bottom;  }   
+    78% {  background-position: -83.19rem bottom;  }   
+    84% {  background-position: -89.6rem bottom;  }   
+    100% {  background-position: -89.6rem bottom;  }    
 }
 @keyframes run{   
-  0%, 6%{  background-position: 0 0;  }   
-  25%, 40%{  background-position: -640px 0;  }   
-  50%, 62%{  background-position: -1280px 0 ;  }   
-  75%, 81%{  background-position: -1920px 0 ;  }   
-  87.5%, 100%{  background-position: -2560px 0 ;  } 
-}
+    0%{  background-position: 0 bottom;  }   
+    6% {  background-position: -6.4rem bottom;  }   
+    12% {  background-position: -12.8rem bottom;  }   
+    18% {  background-position: -19.2rem bottom;  }   
+    24% {  background-position: -25.6rem bottom;  }   
+    30% {  background-position: -32rem bottom;  }   
+    36% {  background-position: -38.4rem bottom;  }   
+    42% {  background-position: -44.8rem bottom;  }   
+    48% {  background-position: -51.2rem bottom;  }   
+    54% {  background-position: -57.6rem bottom;  }   
+    60% {  background-position: -64rem bottom;  }   
+    66% {  background-position: -70.4rem bottom;  }   
+    72% {  background-position: -76.79rem bottom;  }   
+    78% {  background-position: -83.19rem bottom;  }   
+    84% {  background-position: -89.6rem bottom;  }   
+    100% {  background-position: -89.6rem bottom;  }    
+} 
 
 /*敬请期待*/
 .wait-wrap {
